@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:weightSum="100">
+	<TextView
+	  android:text="Ustawienia"
+	  android:gravity="center"
+	  android:textAppearance="?android:attr/textAppearanceLarge"
+	  android:layout_width="match_parent"
+	  android:layout_height="wrap_content"
+	  android:layout_weight ="30"
+	  android:id="@+id/textView1" />
+	<LinearLayout
+		android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+		<TextView
+		android:text=""
+		android:gravity="center"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight ="10"
+		android:id="@+id/textView1" />
+	<LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+		    android:layout_weight="15">
+            <TextView
+                android:text="Prędkość marszu (km/h)"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/SpeedSpinner" />
+      </LinearLayout>
+	<LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+		    android:layout_weight="15">
+            <TextView
+                android:text="Czas przesiadki (min)"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/ChangeSpinner" />
+        </LinearLayout>
+	
+		<Button
+			android:text="Zapisz"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/SaveButton" />
+	
+	</LinearLayout>
+
+</RelativeLayout>
